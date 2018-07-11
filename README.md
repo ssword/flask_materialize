@@ -2,24 +2,12 @@
 Flask-Materialize
 ===============
 
-# **With the recent addition of Google's Material Design Lite, this project will soon be ported over to that framework and change names. <http://www.getmdl.io/> However, this project will be maintained in this repo and on PyPi. More updates will follow.**
-
-
-[![Join the chat at https://gitter.im/HellerCommaA/flask-materialize](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/HellerCommaA/flask-materialize?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/HellerCommaA/flask-materialize/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/HellerCommaA/flask-materialize/?branch=master)
-
-[![Build Status](https://scrutinizer-ci.com/g/HellerCommaA/flask-materialize/badges/build.png?b=master)](https://scrutinizer-ci.com/g/HellerCommaA/flask-materialize/build-status/master)
-
-Flask-Material packages `MaterializeCSS` <https://github.com/Dogfalo/materialize> into an extension that mostly consists
+Flask-Materialize packages `MaterializeCSS` <https://github.com/Dogfalo/materialize> into an extension that mostly consists
 of a blueprint named 'material'. It can also create links to serve Materialize
 from a CDN and works with no boilerplate code in your application.
 
-
-Demo
-----
-A quick demo applicdation can be seen at http://flask-template-materia.elasticbeanstalk.com/  
-This demo is a clone of https://github.com/HellerCommaA/flask-template-materialize  
+Materialise has recently moved from 0.100 to version 1.0.0 RC 2, and this extension updates the original extension to this latest version.
+It also updates the version of jQuery loaded by the extension from 1.11 to 3.3.1
 
 Usage
 -----
@@ -104,7 +92,7 @@ if __name__ == '__main__':
                 	{{ util.card('Hello world!', wtf.quick_form(form) )}}
                 {{ enddiv() }}
                 {{ col(['s12', 'm6'])}}
-                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/HellerCommaA', 'My Github']])}}
+                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/Cyberspy', 'My Github']])}}
             	{{ enddiv() }}
         {{ enddiv() }}
 {{ enddiv() }}
@@ -127,7 +115,7 @@ if __name__ == '__main__':
                 	{{ util.card('Hello world!', wtf.quick_form(form) )}}
                 </div>
                 <div class="col s12 m6">
-                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/HellerCommaA', 'My Github']])}}
+                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/Cyberspy', 'My Github']])}}
             	</div>
         </div>
 </div>
@@ -161,7 +149,8 @@ Starts: Inside the `<head>` block, after `</title>`. Automatically includes
 Ends: Within `<head>` block, just before `{{block styles}}`
 
 	{{block styles}}
-Starts: Inside the head block, after the `metas` block closes. Includes a link to material.css be sure to call super()  
+Starts: Inside the head block, after the `metas` block closes. Includes a link to material.css,
+Material Icons and Roboto - both as web fonts from Google.  **Be sure to include {{ super() }}** 
 Ends: Just before `</head>`
 
 	{{block body_attribs}}
@@ -173,7 +162,7 @@ Ends: Just before `>` in the top `<body>` tag.
 Starts: Immediately after `<body>`  
 Contains: 	`{{block navbar}}`  
 Contains: 	`{{block content}}`  
-Contains:	`{{block scripts}}`  **which includes materialize.js and jquery.js, *be sure to call super***  
+Contains:	`{{block scripts}}`  **which includes materialize.js and jquery.js, *be sure to include {{ super() }}***  
 Contains: 	`{{block footer}}`  
 Ends: Just above `</body>`
 
@@ -215,7 +204,9 @@ TODO
 ----
 * Fix WTF forms integration (quick form)  
 * Finish documentation
+* Additional Macros
+* Demo site
 
 Notes
 -----
-This is largely a fork from the excellent work at <https://github.com/mbr/flask-bootstrap>
+This is largely a fork from the excellent work at <https://github.com/mbr/flask-bootstrap> and https://github.com/HellerCommaA/flask-materialize
