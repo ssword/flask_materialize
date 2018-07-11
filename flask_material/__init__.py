@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding=utf8
 
-__app_version__ = '0.1.1'
-__material_version__ = '0.96.1'
+__app_version__ = '0.2.1'
+__material_version__ = '1.0.0-rc.2'
 
 import re
 
@@ -118,8 +118,8 @@ class Material(object):
             self.init_app(app)
 
     def init_app(self, app):
-        MATERIAL_VERSION = '0.96.1'
-        JQUERY_VERSION = '1.11.3'
+        MATERIAL_VERSION = '1.0.0-rc.2'
+        JQUERY_VERSION = '3.3.1'
         HTML5SHIV_VERSION = '3.7.2'
         RESPONDJS_VERSION = '1.4.2'
 
