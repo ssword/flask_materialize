@@ -9,11 +9,11 @@ def read(fname):
 
 setup(
     name='Flask-Material',
-    version='0.1.1',
-    url='https://github.com/HellerCommaA/flask-materialize',
+    version='0.2.1',
+    url='https://github.com/Cyberspy/flask-materialize',
     license='MIT',
-    author='Adam Heller',
-    author_email='heller@mailbox.org',
+    author='Adam Cadman',
+    author_email='cyberspy.oss@gmx.com',
     description='An extension that includes Materialize CSS (http://materializecss.com/) in your '
                 'project, without any boilerplate code.',
     long_description=read('README.rst'),
@@ -22,16 +22,19 @@ setup(
     include_package_data=True,
     platforms='any',
     install_requires=[
-        'Flask>=0.8',
+        'Flask>=0.12',
     ],
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
+        'Framework :: Flask',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules'
+        'Topic :: Software Development :: User Interfaces'
     ]
 )
