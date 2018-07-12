@@ -8,8 +8,8 @@ def read(fname):
 
 
 setup(
-    name='Flask-Materialize',
-    version='0.2.0',
+    name='flask_materialize',
+    version='0.2.3',
     url='https://bitbucket.org/cyberspy/flask_materialize',
     license='MIT',
     author='Adam Cadman',
@@ -17,13 +17,13 @@ setup(
     description='An extension that includes Materialize CSS (http://materializecss.com/) in your '
                 'project, without any boilerplate code.',
     long_description=read('README.rst'),
-    packages=['flask_material'],
+    packages=['flask_materialize'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',
     install_requires=[
         'Flask>=0.12',
-        'Jinja>=2.0',
+        'Jinja2>=2.0',
     ],
     classifiers=[
         'Environment :: Web Environment',

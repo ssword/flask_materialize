@@ -1,8 +1,8 @@
 import re
 
 from flask import Flask
-from flask_material import Material
-import flask_material
+from flask_materialize import Material
+import flask_materialize
 import requests
 
 import pytest
@@ -23,7 +23,7 @@ def client(app):
 @pytest.fixture
 def bsv():
     material_version = re.search(r'(\d+\.\d+\.\d+)',
-                                  str(flask_material.__material_version__)).group(1)
+                                  str(flask_materialize.__material_version__)).group(1)
     return material_version
 
 

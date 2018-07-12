@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash
-from flask_material import Material
+from flask_materialize import Material
 from flask_appconfig import AppConfig
 from flask_wtf import Form, RecaptchaField
 from flask_wtf.file import FileField

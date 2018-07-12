@@ -20,7 +20,7 @@ A sample helloworld app:
 
 ```python
 from flask import Flask, render_template  
-from flask_material import Material  
+from flask_materialize import Material  
 from flask_wtf import Form, RecaptchaField
 from flask_wtf.file import FileField
 from wtforms import TextField, HiddenField, ValidationError, RadioField,\
