@@ -8,8 +8,8 @@ def read(fname):
 
 
 setup(
-    name='Flask-Material',
-    version='0.2.1',
+    name='Flask-Materialize',
+    version='0.2.0',
     url='https://bitbucket.org/cyberspy/flask_materialize',
     license='MIT',
     author='Adam Cadman',
@@ -23,7 +23,7 @@ setup(
     platforms='any',
     install_requires=[
         'Flask>=0.12',
-        'Jinja>=2.0'
+        'Jinja>=2.0',
     ],
     classifiers=[
         'Environment :: Web Environment',
@@ -35,7 +35,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Topic :: Software Development :: Libraries :: Python Modules'
-        'Topic :: Software Development :: User Interfaces'
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Software Development :: User Interfaces',
     ]
 )
