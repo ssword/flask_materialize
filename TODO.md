@@ -1,3 +1,7 @@
 ----
-1. Change package name on pypi to match github repo
-2. Finish macro and block conversion & doc.
+TODO
+----
+* Fix WTF forms integration (quick form)  
+* Finish documentation
+* Additional Macros
+* Demo site

@@ -92,7 +92,7 @@ if __name__ == '__main__':
                 	{{ util.card('Hello world!', wtf.quick_form(form) )}}
                 {{ enddiv() }}
                 {{ col(['s12', 'm6'])}}
-                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/Cyberspy', 'My Github']])}}
+                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://bitbucket.org/cyberspy/flask_materialize', 'My Bitbucket']])}}
             	{{ enddiv() }}
         {{ enddiv() }}
 {{ enddiv() }}
@@ -115,7 +115,7 @@ if __name__ == '__main__':
                 	{{ util.card('Hello world!', wtf.quick_form(form) )}}
                 </div>
                 <div class="col s12 m6">
-                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/Cyberspy', 'My Github']])}}
+                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://bitbucket.org/cyberspy/flask_materialize', 'My Bitbucket']])}}
             	</div>
         </div>
 </div>

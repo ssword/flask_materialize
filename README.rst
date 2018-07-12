@@ -7,5 +7,5 @@ of a blueprint named 'material'. It can also create links to serve Materialize
 from a CDN and works with no boilerplate code in your application.
 
 
-Please see: `https://github.com/Cyberspy/flask-material 
-<https://github.com/Cyberspy/flask-material>`_ for additional documentation.
+Please see: `https://bitbucket.org/cyberspy/flask_materialize
+<https://bitbucket.org/cyberspy/flask_materialize>`_ for additional documentation.

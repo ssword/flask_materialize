@@ -10,7 +10,7 @@ def read(fname):
 setup(
     name='Flask-Material',
     version='0.2.1',
-    url='https://github.com/Cyberspy/flask-materialize',
+    url='https://bitbucket.org/cyberspy/flask_materialize',
     license='MIT',
     author='Adam Cadman',
     author_email='cyberspy.oss@gmx.com',
@@ -23,6 +23,7 @@ setup(
     platforms='any',
     install_requires=[
         'Flask>=0.12',
+        'Jinja>=2.0'
     ],
     classifiers=[
         'Environment :: Web Environment',
