@@ -8,8 +8,8 @@ def read(fname):
 
 
 setup(
-    name='flask_materialize',
-    version='0.2.3',
+    name='Flask_Materialize',
+    version='0.2.4',
     url='https://bitbucket.org/cyberspy/flask_materialize',
     license='MIT',
     author='Adam Cadman',
@@ -25,12 +25,14 @@ setup(
         'Flask>=0.12',
         'Jinja2>=2.0',
     ],
+    keywords="flask materialize materializecss material design css html layout bootstrap responsive widgets wtforms templates",
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Framework :: Flask',
+        'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
